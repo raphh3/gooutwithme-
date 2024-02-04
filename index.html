@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Will you be my valentine ?</h1>
+      <img class="gif" alt="gif"
+      src=https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGhtZHUwOTl1ZjFyeDRwcWh1N3ZweGduZXV1NmFsaTc4NXJzZjRjdSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QneHAgAjCfeGxv21hx/giphy.gif
+      />
+      <div class="buttons">
+        <button id="Yes"><a href="yes.html">Yes</a></button>
+        <button id="No">No</button>
+      </div>
+    </div>
+
+    <script>
+      function getRandomPosition() {
+        var windowHeight = window.innerHeight;
+        var windowWidth = window.innerWidth;
+
+        var buttonWidth = document.getElementById('No').offsetWidth;
+        var buttonHeight = document.getElementById('No').offsetHeight;
+
+        var maxX = windowWidth - buttonWidth;
+        var maxY = windowHeight - buttonHeight;
+
+        var randomX = Math.floor(Math.random() * maxX);
+        var randomY = Math.floor(Math.random() * maxY);
+
+        return { x: randomX, y: randomY };
+      }
+
+      function moveButton() {
+        var button = document.getElementById('No');
+        var newPosition = getRandomPosition();
+
+        button.style.left = newPosition.x + 'px';
+        button.style.top = newPosition.x + 'px';
+      }
+      document.getElementById('No').addEventListener('mouseover', moveButton);
+    </script>
+  </body>
+</html>

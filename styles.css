@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: black;
+  color: rgb(166, 106, 115);
+  font-family: 'League Gothic', sans-serif;
+}
+
+h1 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 48px;
+  color: rgb(166, 106, 115);
+  text-align: center;
+  margin: 15px 30px 30px;
+}
+.gif {
+  width: 300px;
+  margin-bottom: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+button:nth-child(1) {
+  margin-left: -200px;
+  background: rgb(166, 106, 115);
+}
+
+button:nth-child(2) {
+  margin-right: -200px;
+  background: rgb(166, 106, 115);
+  color: rgb(166, 106, 115);
+}
+
+#Yes {
+  color: rgb(73, 33, 39);
+  background-color: rgb(254, 212, 218);
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  height: 30px;
+  font-size: 1.2em;
+  border: none;
+}
+
+#No {
+  position: absolute;
+  color: rgb(73, 33, 39);
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid rgb(166, 106, 115);
+  width: 150px;
+  height: 30px;
+  font-size: 1.2em;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(73, 33, 39);
+}
+
+p {
+  font-size: 30px;
+}
+
+.min {
+  font-size: 20px;
+}
